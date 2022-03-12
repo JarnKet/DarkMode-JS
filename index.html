@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark & Light Mode</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="theme-switch-container">
+      <span id="toggle-icon">
+        <span class="toggle-text">ໂໝດກາງເວັນ</span>
+        <i class="fas fa-sun"></i>
+      </span>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <nav id="nav">
+      <div class="nav-Links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#home">ໜ້າທຳອິດ</a></li>
+          <li><a href="#project">ໂປເຈັກ</a></li>
+          <li><a href="#contact">ຊ່ອງທາງການຕິດຕໍ່</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <section id="home">
+      <div class="title-group">
+        <h1>ເກດສະດາພອນ ບຸດປານີດາ</h1>
+        <h2>ຂຽນໂປຣແກຣມ, ອອກແບບ ແລະ ພັດທະນາເວັບໄຊ້ສ</h2>
+      </div>
+    </section>
+    <section id="project">
+      <h1>ຜົນງານດ້ານຕ່າງໆ</h1>
+      <div class="project-container">
+        <div class="image-container">
+          <h2>ພັດທະນາເວັບໄຊ້ສຕ່າງໆ</h2>
+          <img src="IMG/web_dev_light.svg" alt="" id="image1" />
+        </div>
+        <div class="image-container">
+          <h2>ສ້າງໂປຣແກຣມຄຸ້ມຄອງ</h2>
+          <img src="IMG/dev_program_light.svg" alt="" id="image2" />
+        </div>
+        <div class="image-container">
+          <h2>ຟີແລັ້ນ</h2>
+          <img src="IMG/freelance_light.svg" alt="" id="image3" />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>ຊ່ອງທາງການຕິດຕໍ່</h1>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-dev"></i>
+      </div>
+    </section>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
